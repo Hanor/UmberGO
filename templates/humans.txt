@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Hanor Sátiro Cintra -- Lead Developer -- hanor_13ctb@hotmail.com
+
+# THANKS
+
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
+    Node.js, MongoDB
+    Handlebars, WebSocket
