@@ -1,0 +1,28 @@
+Instruções
+
+___________________________________________
+
+Instalar o node.js
+Instalar o mongodb
+Abrir o prompt como adm e digitar: npm install mongodb - Isso fara 
+com que o driver do mongo seja instalado
+
+___________________________________________
+
+Abrir a pasta do MONGODB e executar o mongod.exe - Isso fara com que o banco esteja ativo
+na porta padrão
+
+executar na mesma pasta o mongo.exe 0 Isso fara o acesso ao banco
+
+https://mongodb.github.io/node-mongodb-native/api-articles/nodekoarticle1.html
+
+
+http://mongodb.github.io/node-mongodb-native/2.0/api/
+
+
+
+____________________________________________________
+
+Instalar o websocket -> npm install websocket
+
+:)

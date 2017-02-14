@@ -1,0 +1,90 @@
+<div class = "window">
+	<div class = "black-bar">
+		<div class = "player-status" data-toggle="tooltip" data-placement="bottom" title="Pretas">
+			<span style = "font-size:40px; color:black; text-shadow:1px 1px 2px rgba(255,255,255,0.89);" class = "glyphicon glyphicon-tower"> </span>
+		</div>
+	</div>
+
+	<div class = "scenario">
+	    <div class = "tabuleiro">
+	    </div>
+	</div>
+
+	<div class = "white-bar">
+		<div class = "player-status" data-toggle="tooltip" data-placement="bottom" title="Brancas">
+			<span style = "font-size:40px; color:white; text-shadow:1px 1px 5px rgba(178,34,34,1);" class = "glyphicon glyphicon-tower"> </span>
+		</div>
+	</div>
+</div>
+
+<script id = "board-template" type = "text/x-handlebars-template">
+	<div class = "marcador" style = "top:{{top}}px; left:-40px;"><b>{{ letra }}</b></div>
+	<div class = "marcador" style = "top: -40px; left:{{left}}px;"><b>{{ numero }}</b></div>
+</script>
+
+<script id = "piece-template" type = "text/x-handlebars-template">
+	<div id = {{id}} class = "piece" style = "top:{{top}}px; left:{{left}}px" >
+		{{#if handcap}}
+			<div class = "handcap"></div>
+		{{/if}}
+	</div>
+</script>
+
+<script id = "played-template" type = "text/x-handlebars-template">
+	<div  id = "played">
+	</div>
+</script>
+
+<script id = "commands-template" type = "text/x-handlebars-template">
+	<div  id = "command">
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="clear_board" autofocus>
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button">Enviar</button>
+				</span>
+		</div>
+		<div class = "error-msg"></div>
+	</div>
+</script>
+
+<script id = "loader-template" type = "text/x-handlebars-template">
+	<div style = "width:{{width}};text-align:center">
+		<div>
+			<img src="../img/hourglass.svg"style = "margin:auto; width:{{widthH}}; height:{{heitghtH}};"> 
+		</div>
+		<span style="font-size:{{fontSize}};">{{msg}}</span>
+	</div>
+</script>
+
+<script id = "modal-template" type = "text/x-handlebars-template">
+	<div class="modal-body">
+	</div>
+	<div class="modal-footer" style = "display:none; border:0px;">
+		<button type="button" class="btn btn-default modal-new-game" data-dismiss="modal" style = "background:rgba(46,139,87,1); color:white; display:none">Recomeçar</button>
+		<button type="button" class="btn btn-default modal-close" data-dismiss="modal">Fechar</button>
+	</div>
+</script>
+
+<script id = "score-template" type = "text/x-handlebars-template">
+	<div style = "width:{{width}};text-align:center">
+		{{#if msg}}	
+			<span style="font-size:16px;">{{msg}}</span>
+			{{else}}
+				<div style = "margin-top:10px;">
+					<b>
+						<span style = "font-size:32px; color:{{pieceColor}}; text-shadow:1px 1px 5px rgba(0,0,0,0.9);" class = "glyphicon glyphicon-tower">
+						</span>
+					</b>
+				</div>
+				<span style = "font-size:12px; color:black; margin-top:-10px;"> As peças {{colorW}} vencem as {{colorL}} com a diferença de {{pontos}} pontos</span>
+		{{/if}}
+	</div>
+</script>
+
+<script id = "status-popover-template" type = "text/x-handlebars-template">
+	<div class="popover {{colorP}}">
+		<div class="arrow"></div>
+		<div class="popover-content">
+		</div>
+	</div>
+</script>

@@ -1,0 +1,22 @@
+Olá professor Julio.
+
+Este arquivo possui como intuito auxialo na interpretação e em situa-lo sobre o modo como foi desenvolvido o projeto
+
+Esta versão não possui ainda iteração com o banco de dados e será refatorada com a finalidade de fornecer código mais dinamico e organizado.
+
+1ºPasso -  A interface pode ser vista ao abrir o arquivo index.html, Nela é exibida um tabuleiro com uma disposição de peças gerada aleatoriamente e em seguida é feita a utilização do AG para identificar uma boa possivél jogada.
+
+2ºPasso - É possivel ver todas as iterações que ocorreram apertando f12 ou ctrl+shift+i (no chrome), selecione console e nele aparecera um objeto, selecione o objeto e vá o expandindo que encontrara para cada uma das gerações
+o melhor individuo da população. O individuod a população escolhido como jogada é o individuo com maior pontuação da iteração de numero 50.
+
+3ºPasso - O código ou engine do projeto, começa com o arquivo dataArc.js, nele existe a geração de uma disposição de peças aleatoria e com isso, chamara a função: umberProt, passando como parametro o tabuleiro gerado, 
+a função umberProt está contida no arquivo: umberPrototype.js.
+
+4ºPasso - O código do algoritmo genetico está presente no arquivo umberPrototype.js, nele ocorrem as manipulações das informações contidas nas disposição das peças para pontuar e avaliar cada um dos individuos.
+O código está comentado. Após a geração de 50 populações, irá retornar para o bloco de código que a chamou (arquivo: dataArc.js) o qual irá apresentar na tela por meio de um alerta, a jogada que o sistema irá fazer.
+
+---------------------
+
+Muitas modificações na estrutura iram ocorrer. Gostaria que o senhor avalia-se os mecanismos tais quais eu uso para calcular a pontuação do individuo e também o cruzamento.
+
+O senhor pode gerar uma disposição de peças da forma como bem entender...
