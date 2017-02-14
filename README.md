@@ -12,12 +12,12 @@ Este projeto foi dividido em duas grandes esferas, o FrontEnd e o BackEnd. No fr
 
 Além disso tudo explanado acima, o frontend roda em um servidor Apache Http.
 
-#Instruçoçes de instalação e utilização
+#Instruções de instalação e utilização
 
 Para ser possível executar este projeto, é necessário que seja feito os seugintes passos:
 
 
-1 - Intalar o Apache HTTP
+1 - Instalar o Apache HTTP
 
 	1.1 - Após a instalação do apache HTTP é necessário no arquivo de configuração 
 	do apache mudar o documentroot para o endereço onde está o index.html (pasta raiz).
@@ -28,7 +28,7 @@ Para ser possível executar este projeto, é necessário que seja feito os seugi
 
 	2.1 - Após instalar o mongoDB é necessário certificar-se que ele está operacional.
 
-3 - Intalar o Node.js
+3 - Instalar o Node.js
 
 	3.1 - Após ter instalado o node.js é necessário fazer os seguintes passos:
 
@@ -59,7 +59,7 @@ Para ser possível executar este projeto, é necessário que seja feito os seugi
 	---- após digitar este comando o servidor se conectara ao mongodb e ao gnugo, além disso, 
 	ficara aguardando conexão de cliente. Por enquanto este projeto é mono cliente.
 
-5 - Se chegoua té aqui, pode desfrutar do jogo e do UMBER GO :)
+5 - Se chegou até aqui, pode desfrutar do jogo e do UMBER GO :)
 
 
 
